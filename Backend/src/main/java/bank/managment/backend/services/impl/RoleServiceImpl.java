@@ -35,4 +35,11 @@ public class RoleServiceImpl implements IRoleService {
 		return roleDao.findByCode(code);
 	}
 
+	@Override
+	public Optional<Role> findByLabel(String code) {
+		return roleDao.findByCode(code);
+	}
+
+	
+
 }

@@ -10,4 +10,7 @@ public interface IRoleService {
 	Optional<Role> findById(Long id);
 	List<Role> findAll();
 	Optional<Role> findByCode(String code);
+	Optional<Role> findByLabel(String code);
+
+	
 }

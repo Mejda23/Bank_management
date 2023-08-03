@@ -23,10 +23,10 @@ public class RoleInitializer implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		if(!roleService.findByCode("ADMIN3").isPresent()) {
+		if(!roleService.findByCode("ADMIN").isPresent()) {
 			Role role1 = new Role();
-			role1.setCode("ADMIN3");
-			role1.setLabel("Bank Administrator3");
+			role1.setCode("ADMIN");
+			role1.setLabel("Bank Administrator");
 			roleService.save(role1);
 			
 			roleService.findAll().stream().forEach(role->{
